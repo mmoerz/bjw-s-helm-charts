@@ -14,10 +14,30 @@
 
 <br><br>
 
-👋 Welcome to my Helm Charts repository. This repo contains Helm charts that I have developed to run applications in my [home Kubernetes cluster](https://github.com/bjw-s-labs/home-ops/).
+🚀 Welcome to this Helm Charts repository. 
+This repo is a fork of the well known bjw-s-labs repo.
+I created the fork because I like to be a bit paranoid about other's git repos. So feel free to be paranoid as well and fork mine 😊.
+
+Additional features you can find here:
+    * dev-container that can be used with vscode
+
+It is going to contain my Helm charts while utilizing the helm library of bjw-s.
 This repo is **not** intended to be a replacement for any of the large collections of Helm charts that are out there.
 
+Planned features:
+    * seccompProfile support in helm library
+    * seccompProfile hardened helm charts
+
 ---
+
+## Development
+
+If you want to use this repo as a base for your development and you utilize vscode like me, there are some hints to get you setup:
+In order to initialize your containers work directory properly on linux, you will need to run:
+``` sudo chown $USER:$GID /workspace ```
+
+otherwise you will be stuck with an unwriteable /workspace directory owned by root.
+Apparently this behaviour seams to be a bug in the devcontainers of microsoft.
 
 ## Installation
 
@@ -25,23 +45,13 @@ This repo is **not** intended to be a replacement for any of the large collectio
 
 The Helm repository can be installed as follows:
 
-```console
-helm repo add bjw-s https://bjw-s-labs.github.io/helm-charts
-```
-
-You can then run `helm search repo bjw-s` to search the charts.
+TBW - to be written
 
 ---
 
 ### 📖 Docs
 
-The documentation that goes along with this repo can be found [over here](https://bjw-s-labs.github.io/helm-charts/).
-
----
-
-### 🔎 Support
-
-If you like this project, please consider supporting my work through my [GitHub sponsorship page](https://github.com/sponsors/bjw-s?frequency=one-time).
+TBW
 
 ---
 
@@ -51,23 +61,6 @@ If you wish to contribute to this repository, take a look at the [contributing i
 
 ---
 
-## How do I find people running these charts?
-
-### Discord
-
-Join the home-operations [Discord](https://discord.gg/home-operations) community on Discord.
-
-### Repository topics
-
-Have a look at people running Kubernetes at home by checking the ["`k8s-at-home`"](https://github.com/topics/k8s-at-home?o=desc&s=updated) or ["`kubesearch`"](https://github.com/topics/kubesearch?o=desc&s=updated) on GitHub.
-
-### Search
-
-You can use the awesome [kubesearch](https://kubesearch.dev) provided by [@whazor](https://github.com/whazor) to search for public
-repositories containing any application you might wish to run.
-
----
-
 ### 🔏 License
 
-See [LICENSE](https://github.com/bjw-s-labs/helm-charts/blob/main/LICENSE)
+See [LICENSE](https://github.com/mmoerz/bjw-s-helm-charts/LICENSE)
